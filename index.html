@@ -7,42 +7,46 @@
   <link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
   <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/png">
-  <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
-    0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
-    for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
-    MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
-    mixpanel.init("9bb11a223770fc914cb298e9ca591f9a")</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164167616-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-164167616-1');
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KCTT422');</script>
 </head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 
 <body>
 
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCTT422"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
   <div id="app">
-
-    <h2>tread HIIT Timer</h2>
-
-    <p class="controls">April 15, 2020 | 10 min Super-Abs
-       </p>
-
-
-    <h1 id="status">Get Tready!</h1>
-
-    <p class="large"><span id="sec">40</span></p>
-
+    <p class="controls">Animal Flow Strength and Conditioning</p>
+    <a href="https://www.instagram.com/treadhill/"><h2 id="status">@treadhill</a> for daily workouts</h2>
+    <p class="large"><span id="sec"></span></p>
+<img id="help" src="intro.gif" alt="Well Folks, this gif is not loading" width="80%" height="50%">
+ 
     <p class = "menu">
-      <button id="start">Start</button>
+        <button id="start">Start</button>
       &nbsp;&nbsp;&nbsp;&nbsp;
-      <button id="pause">Pause</button>
+      <a href="#" id ="paused"><button id="pause">Pause</button></a>
       &nbsp;&nbsp;&nbsp;&nbsp;
-      <button id="complete">End</button>
+      <a href="#" id ="ended"><button id="complete">End</button></a>
     </p>
-    <p>
-      <button id="what">Confused?</button>    
+    <p class="controls" id="next">UP NEXT : 
     </p>
-
 <audio id="myAudio">
-  <source src="cradles.mp3" type="audio/mpeg">
+  <source src="music.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
       
@@ -57,7 +61,7 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Watch the animation below if you have doubts in the motion.</p><img id="help" src="workouts//started.gif" alt="Well Folks, this gif is not loading" width="70%" height="50%">
+    <p>Watch the animation below if you have doubts in the motion.</p><img id="help" src="workouts//startedgif.gif" alt="Well Folks, this gif is not loading" width="70%" height="50%">
 
   </div>
 
@@ -66,10 +70,12 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-    <p>Thanks for completing the workout with TREAD! <br><br>
+    <p>Thanks for completing the workout with 
+       <a href="https://www.instagram.com/treadhill/">@treadhill</a> ! 
+    <p>Visit <a href ="https://bit.ly/treadhill">bit.ly/treadhill</a> for daily workouts <br><br>
       You worked out for <span id="min"></span> minutes.<br>
     You burned approx. <span id="cal"></span> calories<br><br>
-        April 15 | 10 min Super-Abs : 
+       Animal Flow Strength and Conditioning
         <div id ="worklist">
       </div>
         <br>
@@ -82,7 +88,7 @@
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="script2.js"></script>
+  <script src="script_saturday.js"></script>
     <script>
 function wholePage()
 {
