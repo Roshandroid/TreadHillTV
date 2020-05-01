@@ -103,7 +103,7 @@ window.onload = function() {
       2,
       2,
       2];
-    var links = [      "workouts//forward_lunge_trunk_rotation.gif",
+    var links = ["workouts//forward_lunge_trunk_rotation.gif",
 "workouts//reverse_lunge_front_kick_left.gif",
 "workouts//reverse_lunge_front_kick_right.gif",
 "workouts//burpees.gif",
